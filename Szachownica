@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+int i,j,a;
+printf("Jak duza ma byc szachownica?\n");
+scanf("%d",&a);
+for (j=0;j<a;j++) {
+if (j%2==0) {
+for (i=0;i<a;i++) {
+if (i%2==0) {
+printf("1 ");
+} else {
+printf("0 ");
+}
+}
+} else {
+for (i=0;i<a;i++) {
+if (i%2==0) {
+printf("0 ");
+}
+else {
+printf("1 ");
+}
+}
+}
+printf("\n");
+}
+return 0;
+}
